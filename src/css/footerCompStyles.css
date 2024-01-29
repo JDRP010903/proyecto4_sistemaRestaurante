@@ -6,10 +6,11 @@
     --color5: #9e9083;
 }
 
-.LogoLosRosales {
-    width: 50px;
-}
 
-.navbar .nav-item:hover {
-    background-color: var(--color3);
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
 }
