@@ -1,12 +1,15 @@
-import "../css/HomePageStyles.css"
-
+import "../css/home-page-styles.css"
+import imagenInicial from "../assets/Images/ImagenInicial.png"
+import imagen1 from "../assets/Images/Imagen1.png"
+import imagen2 from "../assets/Images/Imagen2.png"
+import imagen3 from "../assets/Images/Imagen3.png"
 
 const HomePage = () => {
     return (
         <>
             <div className="row text-center">
                 <div className="col-12 col-lg-6 p-1">
-                    <img className="img-fluid" src="../../public/images/ImagenInicial.png" alt="ImagenComida"/>
+                    <img className="img-fluid" src={imagenInicial} alt="ImagenComida"/>
                 </div>
                 <div className="col-12 col-lg-6 text-center p-1 contenedorTitulo">
                     <h1 className="tituloh1">LOS ROSALES</h1>
@@ -25,13 +28,13 @@ const HomePage = () => {
             <div id="carouselExampleFade" className="carousel slide carousel-fade">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                    <img src="../../public/images/Imagen1.png" className="d-block w-100" alt="FotoPlatillos" />
+                    <img src={imagen1} className="d-block w-100" alt="FotoPlatillos" />
                     </div>
                     <div className="carousel-item">
-                    <img src="../../public/images/Imagen2.png" className="d-block w-100" alt="FotoMesas" />
+                    <img src={imagen2} className="d-block w-100" alt="FotoMesas" />
                     </div>
                     <div className="carousel-item">
-                    <img src="../../public/images/Imagen3.png" className="d-block w-100" alt="..." />
+                    <img src={imagen3} className="d-block w-100" alt="FotoMesas2" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
